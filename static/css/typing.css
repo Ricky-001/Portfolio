@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Press+Start+2&family=Kavivanar&family=Kite+One&family=Patrick+Hand&family=Yomogi&display=swap');
+
+.typewriter {    
+    font-family: 'Geo', sans-serif;
+    font-size: 30px;    
+    color: green;
+    border-right: 5px solid lime; 
+    white-space: nowrap; 
+    overflow: hidden; 
+
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret 500ms steps(30,end) infinite;
+}
+
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 500px;}
+}
+  
+
+@keyframes blink-caret {
+    from { border-color: lime;}
+    to {border-color: transparent;}    
+}
+
+@media (max-width: 600px) {
+    .typewriter {    
+        font-family: 'Geo', sans-serif;
+        font-size: 20px;
+        color: green;        
+        border-right: 5px solid lime; 
+        white-space: nowrap; 
+        overflow: hidden;
+    
+        animation: 
+          typing 3s steps(20, end),
+          blink-caret 500ms steps(20,end) infinite;
+    }
+
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 300px;}
+    }
+      
+    
+    @keyframes blink-caret {
+        from { border-color: lime;}
+        to {border-color: transparent;}    
+    }
+}

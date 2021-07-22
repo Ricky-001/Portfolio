@@ -1,0 +1,325 @@
+<!doctype html>
+{%load static%}
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Local Styles and Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Kavivanar&family=Kite+One&family=Patrick+Hand&family=Yomogi&display=swap" rel="stylesheet">
+    <link href="{%static "css/man.css" %}" rel="stylesheet">
+
+    <title>man V01d3m0r7</title>
+  </head>
+  <body>
+    
+    <script src="{%static "js/keypress.js" %}"></script>
+
+    <!--========================================================================================-->
+                                        <!-- NAVBAR SECTION -->
+    <!--========================================================================================-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5" href="/">
+                <img src={%static "logos/Transparent/White/TomRiddle_StillTimeRed.gif" %} width=200px height=50px>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                <ul class="nav nav-tabs default ms-auto mx-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Whoami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Works
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://github.com/Ricky-001/C3">Metasploit Meterpreter Replica</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/Ricky-001/Utility_Scripts">General Pentesting Tools</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/works">At a Glance</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--========================================================================================-->
+                                        <!-- MODAL SECTION -->
+    <!--========================================================================================-->
+    
+    <button type="button" class="btn btn-primary" hidden="true" data-bs-toggle="modal" href="#exampleModal" id="modaltrigger">        
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">HELP</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Want to know me more? Feel free to drop a message.<br/>
+            I will be more than happy to connect and respond back ASAP.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, I'm good</button>
+            <a style="text-decoration: none" href="/contact">
+                <button type="button" class="btn btn-primary">Contact Me</button>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--========================================================================================-->
+                                        <!-- OTHER SECTION -->
+    <!--========================================================================================-->
+
+    <div class="container">
+        <!-- HEADING -->
+        <div class="row my-5">
+            <div class="col-2">
+                <h2 class="man">{{aka}} (1)</h2>
+            </div>
+
+            <div class="col-8">
+                <h2 class="man text-center">{{aka}} Manual Page</h2>
+            </div>
+
+            <div class="col-2">
+                <h2 class="man">{{aka}} (1)</h2>
+            </div>
+        </div>
+
+        <!-- NAME -->
+        <div class="row mt-3">
+            <div class="col-2">
+                <h2 class="man"><strong>NAME</strong></h2>
+            </div>
+
+            <div class="col-8">
+                
+            </div>
+
+            <div class="col-2">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                
+            </div>
+
+            <div class="col-10">
+                <h2 class="man">
+                    {{name}} -
+                    {{special1}}er and {{special2}}er
+                </h2>
+            </div>
+
+            <div class="col-1">
+                
+            </div>
+        </div>
+
+        <!-- SYNOPSIS -->
+        <div class="row mt-3">
+            <div class="col-2">
+                <h2 class="man"><strong>SYNOPSIS</strong></h2>
+            </div>
+
+            <div class="col-8">
+                
+            </div>
+
+            <div class="col-2">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                
+            </div>
+
+            <div class="col-10">
+                <h2 class="man">
+                    <strong>{{name}}</strong>
+                    <p style="display: inline;">[</p><p style="text-decoration: underline; display: inline;">Options</p><p style="display: inline;">]</p>
+                    <p style="display: inline;">{</p><p style="text-decoration: underline; display: inline;">target</p><p style="display: inline;">}</p>
+                </h2>
+            </div>
+
+            <div class="col-1">
+                
+            </div>
+        </div>
+
+        <!-- DESCRIPTION -->
+        <div class="row mt-3">
+            <div class="col-2">
+                <h2 class="man"><strong>DESCRIPTION</strong></h2>
+            </div>
+
+            <div class="col-8">
+                
+            </div>
+
+            <div class="col-2">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                
+            </div>
+
+            <div class="col-10">
+                <p class="man">
+                    {{name}} aka {{aka}} is a Computer Science undergraduate and passionate about information security.
+                    He has a clear understanding of the best industry practices of programming as well as 
+                    Network and Data security technologies.
+                    <br/><br/>
+                    He is actively training in penetration testing and vulnerability assessment with hands-on courses and internships.
+                    He is also diligent in C/C++ Programming and scripting in Python along with training in Django framework and 
+                    various other information security techniques.
+                    <br/><br/>
+                    Motivated to learn, grow and excel in the Cybersecurity industry, and eager to contribute to team success 
+                    through hard work, attention to detail, and excellent organizational skills.
+                </p>
+            </div>
+
+            <div class="col-1">
+                
+            </div>
+        </div>
+
+        <!-- OPTIONS -->
+        <div class="row mt-3">
+            <div class="col-2">
+                <h2 class="man"><strong>OPTIONS</strong></h2>
+            </div>
+
+            <div class="col-8">
+                
+            </div>
+
+            <div class="col-2">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                
+            </div>
+
+            <div class="col-10">
+                <p class="man">                    
+                        <strong>-p, --penetration</strong><br/>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Penetration Testing
+                        <br/><br/>
+
+                        <strong>-v, --vuln</strong><br/>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Vulnerability Assessment
+                        <br/><br/>
+
+                        <strong>-P, --python</strong><br/>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Python Programming with Django
+                        <br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Python Scripting
+                        <br/><br/>
+
+                        <strong>-c</strong><br/>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C Programming
+                        <br/><br/>
+
+                        <strong>-C, --cpp</strong><br/>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C++ Programming (Object Oriented)
+                        <br/><br/>
+                </p>
+            </div>
+
+            <div class="col-1">
+                
+            </div>
+        </div>
+
+        <!-- SEE ALSO -->
+        <div class="row mt-3">
+            <div class="col-2">
+                <h2 class="man"><strong>SEE ALSO</strong></h2>
+            </div>
+
+            <div class="col-8">
+                
+            </div>
+
+            <div class="col-2">
+                
+            </div>
+        </div>
+
+        <div class="row" style="border: 1px solid black">
+            <div class="col-1">
+                
+            </div>
+
+            <div class="col-10">
+                <h2 class="man">
+                    <a href="/#education" style="color: inherit; text-decoration: none">
+                        <p style="text-decoration: underline; display: inline;">Education (3)</p>,
+                    </a>
+                    <a href="/#experience" style="color: inherit; text-decoration: none">
+                        <p style="text-decoration: underline; display: inline;">Experience (2)</p>,
+                    </a>
+                    <a href="https://drive.google.com/file/d/1vtyL30ASbnzajyXDOrRfhUblmtiyZmfU/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none">
+                        <p style="text-decoration: underline; display: inline;">Resume (1)</p>
+                    </a>
+                </h2>
+            </div>
+
+            <div class="col-1">
+                
+            </div>
+        </div>
+        <div class="mb-5"></div>
+
+    </div>
+
+    <div class="FOOTLINE px-3">
+        Manual page {{aka}}(1) - general description (press h for help or q to quit)
+    </div>
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>    
+    

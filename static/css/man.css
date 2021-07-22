@@ -1,0 +1,43 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&');
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Kavivanar&family=Kite+One&family=Patrick+Hand&family=Yomogi&display=swap');
+
+body {
+    background-color: black;
+    cursor: url('../icons/hack.png'), auto;
+}
+
+a:hover {
+  cursor: url('../icons/pointer.png'), auto;
+}
+
+.digital {
+    font-family: 'Geo', sans-serif;
+    color: green;
+}
+
+.default {
+    font-family: 'Kavivanar', cursive;    
+}
+  
+.typing {
+    font-family: 'Yomogi', cursive;
+    color: green;
+    font-size: 22px;
+}
+
+.man {
+    font-family: 'Source Code Pro', monospace;
+    color: green;
+    font-size: 22px;
+}
+
+.FOOTLINE {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    color: black;
+}
