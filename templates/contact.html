@@ -21,32 +21,32 @@
                                         <!-- NAVBAR SECTION -->
     <!--========================================================================================-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand mx-5" href="/">
                 <img src={%static "logos/Transparent/White/TomRiddle_StillTimeRed.gif" %} width=200px height=50px>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse mx-5 px-5" id="navbarSupportedContent">
                 <ul class="nav nav-tabs default ms-auto mx-5 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Whoami</a>
+                        <a class="nav-link active" href="/">Whoami</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/contact">Contact Me</a>
+                        <a class="nav-link" href="/contact">Contact Me</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             My Works
                         </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="https://github.com/Ricky-001/C3">Metasploit Meterpreter Replica</a></li>
-                        <li><a class="dropdown-item" href="https://github.com/Ricky-001/Utility_Scripts">General Pentesting Tools</a></li>
+                    <ul class="dropdown-menu typing" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://github.com/Ricky-001/C3" target="_blank" rel="noopener noreferrer">Metasploit Meterpreter Replica</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/Ricky-001/Utility_Scripts" target="_blank" rel="noopener noreferrer">General Pentesting Tools</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="/works">At a Glance [details here]</a></li>
                     </ul>
@@ -105,6 +105,10 @@
     
     </div>
 
+    <!--========================================================================================-->
+                                        <!-- BADGES SECTION -->
+    <!--========================================================================================-->
+
     <a href="https://tryhackme.com/p/TomRiddle001" target="_blank" rel="noopener noreferrer">
         <div class="thm_badge px-3">
             <script src="https://tryhackme.com/badge/140134"></script>
@@ -119,7 +123,9 @@
                         <img src="https://media-exp1.licdn.com/dms/image/C5603AQGCgi5j9X0TzA/profile-displayphoto-shrink_800_800/0/1622310211480?e=1632355200&v=beta&t=hyULUTbroDwqVHDo4TZ6AUltXpzwslnOV9o25dysETk" width="60px" height="60px" style="border-radius: 50%">
                     </div>
                     <div class="col-10 man">
-                        <strong>Raktim Saha</strong><br/>
+                        <strong>Raktim Saha</strong>
+                        <img src="{% static "in.gif" %}" height=20px width=20px />
+                        <br/>
                         <p class="liheading">Computer Science undergraduate Cybersecurity enthusiast</p>
                     </div>
                 </div>            
